@@ -1,0 +1,16 @@
+n = int(input("enter rows: "))
+for i in range(0,n):
+    for j in range(n,0,-1):
+        if i < j:
+            print(" ",end=" ")
+        else:
+            print("*"," ",end=" ")
+    print()
+
+for i in range(0,n+1):
+    for j in range(0,n):
+        if i > j:
+            print(" ",end=" ")
+        else:
+            print("*"," ",end=" ")
+    print()
